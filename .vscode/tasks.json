@@ -1,0 +1,88 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Servidor (Auto-reload)",
+      "type": "shell",
+      "command": "python",
+      "args": ["run_dev.py", "servidor.py"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "chat"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Cliente 1 (Auto-reload)",
+      "type": "shell",
+      "command": "python",
+      "args": ["run_dev.py", "cliente.py"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "chat"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Cliente 2 (Auto-reload)",
+      "type": "shell",
+      "command": "python",
+      "args": ["run_dev.py", "cliente.py"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "chat"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Roteador (Auto-reload)",
+      "type": "shell",
+      "command": "python",
+      "args": ["run_dev.py", "roteador.py"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "chat"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Roteador 2 (Auto-reload)",
+      "type": "shell",
+      "command": "python",
+      "args": ["run_dev.py", "roteador2.py"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "chat"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "# Iniciar Servidor + 1 Cliente",
+      "dependsOn": ["Servidor (Auto-reload)", "Cliente 1 (Auto-reload)"],
+      "dependsOrder": "parallel",
+      "problemMatcher": []
+    },
+    {
+      "label": "# Iniciar Servidor + 1 Cliente",
+      "dependsOn": ["Servidor (Auto-reload)", "Cliente 1 (Auto-reload)"],
+      "dependsOrder": "parallel",
+      "problemMatcher": []
+    },
+    {
+      "label": "# Iniciar Servidor + 2 Roteadores + Cliente",
+      "dependsOn": [
+        "Servidor (Auto-reload)",
+        "Roteador (Auto-reload)",
+        "Roteador 2 (Auto-reload)",
+        "Cliente 1 (Auto-reload)"
+      ],
+      "dependsOrder": "parallel",
+      "problemMatcher": []
+    }
+  ]
+}

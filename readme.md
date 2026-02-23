@@ -3,8 +3,6 @@
 **Matéria:** Redes de Computadores\
 **Professor:** Marciano
 
----
-
 ## 📌 Descrição do Projeto
 
 O projeto **Mini-Net** tem como objetivo simular uma rede com:
@@ -26,15 +24,11 @@ Arquivos principais do projeto:
 - `protocol.py`
 - `run_dev.py`
 
----
-
-# ▶️ Como Executar o Projeto
+### ▶️ Como Executar o Projeto
 
 Existem **duas formas** de executar o sistema:
 
----
-
-# ✅ Opção 1 --- Executar via VS Code (Recomendado)
+### ✅ Opção 1 --- Executar via VS Code (Recomendado)
 
 ### Execute a Task configurada
 
@@ -59,7 +53,7 @@ Isso iniciará automaticamente:
 
 ---
 
-# ✅ Opção 2 --- Executar Manualmente pelo Terminal
+### ✅ Opção 2 --- Executar Manualmente pelo Terminal
 
 Abra **4 terminais diferentes** dentro da pasta do projeto.
 
@@ -95,7 +89,7 @@ python cliente.py
 
 ---
 
-# ⚠️ Observações Importantes
+### ⚠️ Observações Importantes
 
 - Certifique-se de que todas as portas configuradas nos arquivos estão
   livres.
